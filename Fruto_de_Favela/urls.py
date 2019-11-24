@@ -20,4 +20,5 @@ from core.views import HomeViews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomeViews.as_view(), name='base'),
+    
 ]
