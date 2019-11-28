@@ -1,11 +1,9 @@
 from django.contrib import admin
-from .models import Instagram, Formulario, Banner
+from .models import NossosProgramasModel
 
 # Register your models here.
 
-class InstagramAdmin(admin.ModelAdmin):
-    list_display = ('nomeUsuario', 'telefone')
+class NossosProgramasModelAdmin(admin.ModelAdmin):
+    list_display = ('titulo', 'descricao')
 
-admin.site.register(Instagram, InstagramAdmin)
-admin.site.register(Formulario)
-admin.site.register(Banner)
+admin.site.register(NossosProgramasModel, NossosProgramasModelAdmin)
