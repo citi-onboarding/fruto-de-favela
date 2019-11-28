@@ -35,3 +35,15 @@ class BannerModel(SingletonModel):
 
     def __str__(self):
         return "Banner"
+
+class ParceirosModel(models.Model):
+    nome = models.CharField('Parceiro', max_length=100, blank=False, null=False)
+    logo = models.ImageField(upload_to='parceiros/', verbose_name='Logo')
+
+    class Meta:
+        ordering = ['nome']
+        verbose_name = 'Parceiro'
+        verbose_name_plural = 'Parceiros'
+
+    def __str__(self):
+        return self.nome
