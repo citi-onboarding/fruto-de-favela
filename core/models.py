@@ -47,3 +47,14 @@ class ParceirosModel(models.Model):
 
     def __str__(self):
         return self.nome
+
+class BannerContatoModel(SingletonModel):
+    instagam = models.CharField('Instagram', max_length=100, blank=True, null=True)
+    telefone = models.CharField('Telefone', max_length=50, blank=True, null=True)
+    email = models.EmailField('E-mail', blank=True, null=True)
+
+    class Meta:
+        verbose_name = 'Contatos'
+
+    def __str__(self):
+        return "Contatos"
