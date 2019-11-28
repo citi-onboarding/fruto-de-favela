@@ -8,9 +8,21 @@ header{
     background-color: orange;
     height: 70px;
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    height: 70px;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-/*secão inicio desktop*/
+/*sessão inicio desktop*/
+
 .input-hamburguer{
     visibility: hidden;
     
@@ -21,13 +33,38 @@ header{
 .label-hamburguer{
     visibility: hidden;
 }
-/*Seção inicio desktop fim*/
+
+.img-logo{
+    max-width: 207px;
+    max-height: 70px;
+}
+.img-inicio{
+    width: 100vw;
+    height: 90vh;
+}
+
+.btn{
+    box-sizing: border-box;
+    margin: 10px;
+    width: 110px;
+    height: 50px;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+}
+.btn:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/*Sessão inicio desktop fim*/
 
 
 /*Parte mobile*/
 
 @media(max-width: 450px){
-    /*secão inicio mobile*/
+    /*sessão inicio mobile*/
 
     .logo_header{
         width: 170px;
@@ -43,6 +80,10 @@ header{
         height: 90vh;
     }
     
+    .btn{
+        overflow: hidden;
+        visibility: hidden;
+    }
 
     /*Menu hamburguer*/
 
@@ -145,6 +186,6 @@ header{
     }
     /*menu hamburguer fim*/
 
-    /*Seção inicio parte mobile fim*/
+    /*Sessão inicio parte mobile fim*/
 }
 /*parte mobile fim*/
