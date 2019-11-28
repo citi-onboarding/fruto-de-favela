@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import NossosProgramasModel, SobreNosModel
+from .models import NossosProgramasModel, SobreNosModel, BannerModel
 
 # Create your views here.
 
@@ -11,5 +11,6 @@ class HomeViews(generic.TemplateView):
         context = super().get_context_data(**kwargs)
         context["nossosProgramas"] = NossosProgramasModel.objects.all()
         context["sobreNos"] = SobreNosModel.objects.first()
+        context["banner"] = BannerModel.objects.first()
         return context
         

@@ -23,7 +23,15 @@ class SobreNosModel(SingletonModel):
 
     class Meta:
         verbose_name = 'Sobre Nós'
-        verbose_name_plural = 'Sobre Nós'
 
     def __str__(self):
         return "Sobre Nós"
+
+class BannerModel(SingletonModel):
+    imagemBanner = models.ImageField(upload_to='banner/', verbose_name='Banner')
+
+    class Meta:
+        verbose_name = 'Banner'
+
+    def __str__(self):
+        return "Banner"
