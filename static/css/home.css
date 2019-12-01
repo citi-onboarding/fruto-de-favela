@@ -334,7 +334,6 @@ input[name="p"]{
 
 .parceiro {
     width: 20%;
-    min-height: 100px;
     margin-bottom: 20px;
 }
 
@@ -392,6 +391,13 @@ input[name="p"]{
     width: 74px;
     height: 29px;
     color: #C63F00;
+    cursor: pointer;
+}
+
+
+.btnEnviar:active {
+    background-color: lightgray;
+    border-radius: 9px;
 }
 
 .center {
@@ -703,41 +709,8 @@ input[name="p"]{
 
     /*Seção parcerias mobile inicio*/
 
-#sec-parcerias-id {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    color: #814223
-}
-
-#sec-parcerias-id h2 {
-    width: 100%;
-    text-align: center;
-}
-
-#parcerias {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px 20px;
-    justify-content: space-evenly;
-
-}
-
 .parceiro {
     width: 45%;
-    min-height: 100px;
-    margin-bottom: 20px;
-}
-
-.parceiro img {
-    width: 100%;
-    border-radius: 9px;
-}
-
-.parceiro p {
-    width: 100%;
-    text-align: center;
 }
 
 /*Seção parcerias mobile fim*/
