@@ -1,7 +1,6 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-color: aquamarine;
 }
 
 header{
@@ -317,6 +316,99 @@ input[name="p"]{
 
 /*Sessão programas desktop fim*/
 
+/*Seção parcerias desktop inicio*/
+
+#sec-parcerias-id {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: #814223
+}
+
+#sec-parcerias-id h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#parcerias {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+    justify-content: space-evenly;
+
+}
+
+.parceiro {
+    width: 20%;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.parceiro img {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.parceiro p {
+    width: 100%;
+    text-align: center;
+}
+
+/*Seção parcerias desktop fim*/
+
+/*Seção contato desktop inicio*/
+
+#sec-contato-id {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec-contato-id h2 {
+    width: 100%;
+    text-align: center;
+    color: #C63F00
+}
+
+.contato {
+    width: calc(100%/3.0);
+}
+
+.contato input, textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #C63F00;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+
+.contato input {
+    height: 26px;
+    margin: 4.5px 0px;
+}
+
+.contato textarea {
+    height: 73px;
+    margin-top: 13.5px;
+}
+
+.contato .btnEnviar {
+    width: 74px;
+    height: 29px;
+    color: #C63F00;
+}
+
+.center {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Seção contato desktop fim*/
+
 /*Parte mobile*/
 
 @media(max-width: 930px), (max-height: 450px){
@@ -506,14 +598,64 @@ input[name="p"]{
 
     
     /*Seção programas mobile inicio*/
+
+    /*Seção parcerias mobile inicio*/
+
+#sec-parcerias-id {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: #814223
+}
+
+#sec-parcerias-id h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#parcerias {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+    justify-content: space-evenly;
+
+}
+
+.parceiro {
+    width: 45%;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.parceiro img {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.parceiro p {
+    width: 100%;
+    text-align: center;
+}
+
+/*Seção parcerias mobile fim*/
+
+    /*Seção contato mobile inicio*/
+    .contato {
+        width: 80%;
+    }
+    
+    .contato .btnEnviar {
+        width: 74px;
+        height: 29px;
+    }    
+    /*Seção contato mobile inicio*/
+
 }
 /*parte mobile fim*/
 
 /*Parte tablet inicio*/
 @media(max-width: 1350px) and (min-width: 450px){
-    body{
-        background-color: red;
-    }
     .btn-pai{
         display: flex;
         flex-direction: row;
@@ -703,40 +845,3 @@ input[name="p"]{
 }
 
 /*Parte tablet fim*/
-
-/* argas sessão contato --------------------------------------------------*/
-#sec-contato-id {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contato {
-    width: 80%;
-}
-
-.contato input, textarea {
-    width: 100%;
-    border: 1px solid #C63F00;
-    border-radius: 5px;
-    background-color: transparent;
-
-}
-
-.contato input {
-    height: 26px;
-    margin: 4.5px 0px;
-}
-
-.contato textarea {
-    text-decoration-style: none;
-    height: 73px;
-    margin-top: 13.5px;
-}
-
-.contato .btnEnviar {
-    width: 64px;
-    height: 24px;
-    color: #C63F00;
-}

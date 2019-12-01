@@ -1,9 +1,9 @@
 $('#formContato').submit(function(e) {
-    e.preventDefault()
-    const nome = $('input[name=nome]').val()
-    const email = $('input[name=email]').val()
-    const assunto = $('input[name=assunto]').val()
-    const mensagem = $('input[name=mensagem]').val()
+    e.preventDefault();
+    const nome = $('input[name=nome]').val();
+    const email = $('input[name=email]').val();
+    const assunto = $('input[name=assunto]').val();
+    const mensagem = $('input[name=mensagem]').val();
 
     const token = jQuery('[name=csrfmiddlewaretoken]').val();
 
@@ -18,5 +18,4 @@ $('#formContato').submit(function(e) {
         'mensagem': mensagem
         }
     })
-
 });

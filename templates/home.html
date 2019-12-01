@@ -273,6 +273,17 @@
                       
         </div>
     </section>
+    <section class="sec-parcerias" id="sec-parcerias-id">
+        <h2>Parcerias</h2>
+        <div id="parcerias">
+            {% for parceiro in parceiros %}
+            <div class="parceiro">
+                <img src=" {{parceiro.logo.url}} "/>
+                <p>{{parceiro.nome}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
     <section class="sec-contato" id="sec-contato-id">
         <h2>Contato</h2>
         <div class="contato">
@@ -286,7 +297,7 @@
                 <input type="text" name="assunto" id="input-assunto" placeholder="Assunto" required>
                 <label for="mensagem"></label>
                 <textarea name="mensagem" id="input-mensagem" required placeholder="Mensagem"></textarea>
-                <input type="submit" value="ENVIAR" class="btnEnviar">
+                <div class="center"><input type="submit" value="ENVIAR" class="btnEnviar"></div>
             </form>
         </div>
     </section>
