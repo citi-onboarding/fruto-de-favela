@@ -404,10 +404,6 @@ input[name="p"]{
 
 /*Parte mobile*/
 
-body{
-    background-color: green;
-}
-
 @media(max-width: 930px), (max-height: 450px){
     /*sessão inicio mobile*/
     header{
@@ -762,9 +758,6 @@ body{
 
 /*Parte tablet inicio*/
 @media(max-width: 1350px) and (min-width: 780px){
-    body{
-        background-color: red;
-    }
     .btn-pai{
         display: flex;
         flex-direction: row;
