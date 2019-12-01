@@ -16,14 +16,34 @@ header{
 }
 nav{
     overflow: hidden;
-    width: 60vw;
+    /*width: 60vw;*/
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-direction: row;
 }
+
+@font-face{
+    font-family: 'Titulo';
+    src: url("../fontes/Matapacos_FREE.ttf");
+
+    
+}
+
+@font-face{
+    font-family: 'paragrafo';
+    src: url("../fontes/trebuchet-ms-bold.ttf");
+}
+
+h2{
+    font-family: 'Titulo';
+    font-size: 40px;
+}
+
 p{
-    font: Regular 12px/14px Trebuchet MS;
+    font-family: 'paragrafo';
 }
+
 
 /*sessão inicio desktop*/
 
@@ -65,19 +85,20 @@ p{
     box-sizing: border-box;
     margin: 10px;
     width: 110px;
-    height: 50px;
+    height: 70px;
     background-color: transparent;
     border: transparent;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 .btn:hover{
-    border: 2px solid white;
-    border-radius: 10px;
+    border-top: 2px solid white;
 }
 
 /*Sessão inicio desktop fim*/
 /*Sessão quem somos desktop */
+
 .sec-quem_somos{
     background-color: #368687;
     position: relative;
@@ -145,6 +166,156 @@ p{
 
 
 /*Sessão quem somos desktop fim*/
+
+/*Sessão programas desktop*/
+.sec-programas{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   position: relative;
+   background-color: white;
+}
+
+.div-h2Programas{
+    margin: 50px;
+}
+
+.sec-programas h2{
+    color: #F6921D;
+}
+
+.sec-programas p{
+    color: #F6921D;
+}
+
+.slidershow{
+    max-width: 60vw;
+    min-width: 350px;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.slideContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.separador{
+    height: 300px;
+    width: 3px;
+    display: block;
+    margin: 46px;
+    background-color: orange;
+}
+
+.div-text{
+    width: 250px;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.div-text h2{
+    margin: 0px;
+}
+
+.middle{
+   width: 50vw;
+}
+.navigation{
+    position: absolute;
+    bottom: -17vh;
+    left: 47%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.b{
+ width: 100px;
+ height: 50px;
+}
+
+.bar{
+    width: 10px;
+    height: 10px;
+    border: 2px solid orange;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    left: -9vw;
+    bottom: 30vh;  
+} 
+.bar2{
+    width: 10px;
+    height: 10px;
+    border: 2px solid orange;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    left: 24vw;
+    bottom: 30vh;  
+}
+.bar:hover{
+    background: orange;
+    transform: scale(1.5);
+}
+.bar2:hover{
+    background: orange;
+    transform: scale(1.5);
+}
+  
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+input[name="p"]{
+    position: absolute;
+    visibility: hidden;
+}
+  
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 10%;
+    transition: 0.6s;
+    display: flex;
+    flex-direction: row;
+}
+.slide img{
+    /*width: 100%;
+    height: 100%;*/
+    width: 400px;
+    height: 380px;
+    /*margin-left: 10px;*/
+    
+}
+
+#r1:checked ~ .s1{   
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+
+
+/*Sessão programas desktop fim*/
 
 /*Parte mobile*/
 
@@ -288,14 +459,15 @@ p{
         flex-direction: column;
         align-items: center;
         position: relative;
-        max-height: 170px;
-        min-height: 1200px;
+        /* max-height: 170px;*/
+        min-height: 1450px;
     }
     .pilar{
+        display: block;
         max-width: 50vw;
-        box-sizing: border-box;
+        /*box-sizing: border-box;*/
         margin: 40px;
-        margin-left: 26vw;
+       /* margin-left: 26vw;*/
     }
     .div-quem_somos{
        /* max-width: 75vw;*/
@@ -303,14 +475,17 @@ p{
         background-color: white;
         position: absolute;
         top: -50px;
-        overflow-y: scroll;
+       /* overflow-y: scroll;
         width: 700px;
-        height: 220px;
+        height: 220px;*/
         scrollbar-color: rebeccapurple green;
     }
+    
     .tres_pilares{
-       position: absolute;
-       bottom: 0px;
+       /*position: absolute;
+       bottom: 0px;*/
+       display: block;
+       text-align: justify;
     }
     .h2-quem_somos{
         margin-left: 20px;
@@ -322,6 +497,15 @@ p{
     }
      
     /*Seção Quem somos mobile fim*/
+
+    /*Seção programas mobile inicio*/
+    .sec-programas{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    
+    /*Seção programas mobile inicio*/
 }
 /*parte mobile fim*/
 
@@ -365,7 +549,156 @@ p{
         position: absolute;
         top: -50px;
     }
-    
     /*Sessão quem somos fim*/
+
+    /*Sessão progrmas tablet*/
+
+    .sec-programas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        background-color: white;
+     }
+     
+     .div-h2Programas{
+         margin: 50px;
+     }
+     
+     .sec-programas h2{
+         color: #F6921D;
+     }
+     
+     .sec-programas p{
+         color: #F6921D;
+     }
+     
+     .slidershow{
+         max-width: 80vw;
+         min-width: 780px;
+         height: 50vh;
+         overflow: hidden;
+     }
+     
+     .slideContainer{
+         display: flex;
+         flex-direction: row;
+     }
+     
+     .separador{
+         height: 300px;
+         width: 3px;
+         display: block;
+         margin: 46px;
+         background-color: orange;
+     }
+     
+     .div-text{
+         width: 250px;
+         display: flex;
+         margin: 20px;
+         flex-direction: column;
+     }
+     
+     .div-text h2{
+         margin: 0px;
+     }
+     
+     .navigation{
+         position: absolute;
+         bottom: -17vh;
+         left: 47%;
+         transform: translateX(-50%);
+         display: flex;
+     }
+     
+     .b{
+      width: 100px;
+      height: 50px;
+     }
+     
+     .bar{
+         width: 10px;
+         height: 10px;
+         border: 2px solid orange;
+         margin: 6px;
+         cursor: pointer;
+         transition: 0.4s;
+         position: relative;
+         left: -9vw;
+         bottom: 30vh;  
+     } 
+     .bar2{
+         width: 10px;
+         height: 10px;
+         border: 2px solid orange;
+         margin: 6px;
+         cursor: pointer;
+         transition: 0.4s;
+         position: relative;
+         left: 24vw;
+         bottom: 30vh;  
+     }
+     .bar:hover{
+         background: orange;
+         transform: scale(1.5);
+     }
+     .bar2:hover{
+         background: orange;
+         transform: scale(1.5);
+     }
+       
+     input[name="r"]{
+         position: absolute;
+         visibility: hidden;
+     }
+     input[name="p"]{
+         position: absolute;
+         visibility: hidden;
+     }
+       
+     .slides{
+         width: 500%;
+         height: 100%;
+         /*display: flex;*/
+     }
+     
+     .slide{
+         width: 10%;
+         width: 400px;
+         height: 380px;
+         transition: 0.6s;
+         /*display: flex;
+         flex-direction: row;*/
+     }
+     .slide img{
+        /*width: 100%;
+        height: 100%;*/
+        width: 400px;
+        height: 380px;
+        /*margin-left: 10px;*/
+     }
+     
+     #r1:checked ~ .s1{   
+         margin-left: 0;
+     }
+     #r2:checked ~ .s1{
+         margin-left: -20%;
+     }
+     #r3:checked ~ .s1{
+         margin-left: -40%;
+     }
+     #r4:checked ~ .s1{
+         margin-left: -60%;
+     }
+     #r5:checked ~ .s1{
+         margin-left: -80%;
+     }
+     
+     
+
+    /*Sessão progrmas tablet fim*/
+
 }
 /*Parte tablet fim*/
