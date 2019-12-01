@@ -21,6 +21,8 @@ nav{
     flex-direction: row;
 }
 
+
+
 @font-face{
     font-family: 'Titulo';
     src: url("../fontes/Matapacos_FREE.ttf");
@@ -66,7 +68,7 @@ p{
 }
 .img-inicio{
     width: 100vw;
-    object-fit: cover;
+    /*object-fit: cover;*/
     max-height: 100vh;
     margin-bottom: -4px;
 }
@@ -309,7 +311,7 @@ input[name="p"]{
 
 /*Sessão programas desktop fim*/
 
-/*Seção parcerias desktop inicio*/
+/*Sessão parcerias desktop inicio*/
 
 #sec-parcerias-id {
     width: 100vw;
@@ -406,7 +408,38 @@ input[name="p"]{
     justify-content: center;
 }
 
-/*Seção contato desktop fim*/
+/*Sessão contato desktop fim*/
+
+/*Sessão footer desktop inicio*/
+
+footer{
+    background-color: #C63F00;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img{
+   transform: scale(0.7);
+}
+
+.icone{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.icone ul{
+    list-style: none;
+}
+
+footer li{
+    font-family: 'Paragrafo';
+    color: #FFFFFF;
+}
+
+/*Sessão footer desktop fim*/
 
 /*Parte mobile*/
 
@@ -426,11 +459,15 @@ input[name="p"]{
     }
     .img-inicio{
         max-width: 100vw;
-       height: 90vh;
+        height: 90vh;
     }
     .btn{
         overflow: hidden;
         visibility: hidden;
+    }
+    .img-logo_inicio{
+        position: absolute;
+        top: 30vh;
     }
 
     /*Menu hamburguer*/
@@ -647,10 +684,10 @@ input[name="p"]{
      }
      
      .bar{
-         width: 10px;
-         height: 10px;
+         width: 20px;
+         height: 20px;
          border: 2px solid orange;
-         margin: 6px;
+         margin: 8px;
          cursor: pointer;
          transition: 0.4s;
          position: relative;
