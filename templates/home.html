@@ -11,7 +11,7 @@
 <body>
     <header class="header" id="header-id">
         <div class="logo_header" id="logo_header-id">
-          <img src="{% static 'fotos/logo.PNG' %}" alt="" class="img-logo">      
+          <img src="" alt="" class="img-logo">      
         </div>
         <nav class="nav-bar" id="nav-bar-id">
 
@@ -39,8 +39,34 @@
         </nav>
     </header>
     <section class="sec-inicio" id="sec-inicio-id">
-        <img src="{% static 'fotos/foto-inicio.PNG' %}" alt="" class="img-inicio">
+        {% if banner.imagemBanner|length > 0 %}
+        <img src="{{ banner.imagemBanner.url }}" alt="" class="img-inicio">
+        {% endif %}
     </section>
+    <section class="sec-contato" id="sec-contato-id">
+        <h2>Contato</h2>
+        <div class="contato">
+            <form action="POST" id="formContato">
+                {% csrf_token %}
+                <label for="input-nome"></label>
+                <input type="text" name="nome" id="input-nome" placeholder="Nome" required>
+                <label for="input-email"></label>
+                <input type="email" name="email" id="input-email" placeholder="Email" required>
+                <label for="input-assunto"></label>
+                <input type="text" name="assunto" id="input-assunto" placeholder="Assunto" required>
+                <label for="mensagem"></label>
+                <textarea name="mensagem" id="input-mensagem" required placeholder="Mensagem"></textarea>
+                <input type="submit" value="ENVIAR" class="btnEnviar">
+            </form>
+        </div>
+    </section>
+   
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="{% static 'js/contato.js' %}"></script>    
     
 </body>
 
