@@ -40,13 +40,20 @@
         </nav>
     </header>
     <section class="sec-inicio" id="sec-inicio-id">
-        <img src="{% static 'fotos/ff.JPG' %}" alt="" class="img-inicio">
+        {% if banner.imagemBanner  %}
+        <img src="{{ banner.imagemBanner.url }}" alt="" class="img-inicio">
+        {% else %}
+        <img src="{% static 'fotos/ff.jpg' %}" alt="" class="img-inicio">
+        {% endif %}
         <img src="{% static 'fotos/FF_Logo_Horizontal.png' %}" alt="" class="img-logo_inicio">
     </section>
     <section class="sec-quem_somos" id="sec-quem_somos-id">
         <div class="div-quem_somos" id ="div-quem_somos-id">
-            <h2 class="h2-quem_somos">Quem somos</h2>
+            <h2 class="h2-quem_somos">Quem somos ?</h2>
             <p class="p-quem_somos">
+                {% if sobreNos.quemSomos %}
+                {{sobreNos.quemSomos}}
+                {% else %}
                 Lorem ipsum dolor sit amet, consectetur 
                 adipisicing elit. Totam quasi dolorem aliquam
                 temporibus, reprehenderit modi omnis voluptas 
@@ -65,7 +72,7 @@
                 quis nulla consequatur, eaque quod voluptatum 
                 fugiat tempora exercitationem repudiandae, 
                 cupiditate deleniti aspernatur.
-                
+                {% endif %}
             </p>
         </div>
        
@@ -73,31 +80,43 @@
             <div class="pilar acolher" id="acolher-id">
                 <h2>Acolher</h2>
                 <p>
+                    {% if sobreNos.acolher %}
+                    {{ sobreNos.acolher }}
+                    {% else %}
                     Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Quod itaque eum vero quisquam? 
                     Numquam corrupti mollitia assumenda minus odio 
                     praesentium dolorum neque sit esse at iure hic, 
                     eos obcaecati minima.
+                    {% endif %}
                 </p>
             </div>
             <div class="pilar desenvolver" id="desenvolver-id">
                 <h2>Desenvolver</h2>
                 <p>
+                    {% if sobreNos.desenvolver %}
+                    {{ sobreNos.desenvolver }}
+                    {% else %}
                     Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Quod itaque eum vero quisquam? 
                     Numquam corrupti mollitia assumenda minus odio 
                     praesentium dolorum neque sit esse at iure hic, 
                     eos obcaecati minima.
+                    {% endif %}
                 </p>
             </div>
             <div class="pilar caminhar" id="caminhar-id">
-                <h2>Caminhar</h2>
+                <h2>Encaminhar</h2>
                 <p>
+                    {% if sobreNos.encaminhar %}
+                    {{ sobreNos.encaminhar }}
+                    {% else %}
                     Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Quod itaque eum vero quisquam? 
                     Numquam corrupti mollitia assumenda minus odio 
                     praesentium dolorum neque sit esse at iure hic, 
                     eos obcaecati minima.
+                    {% endif %}
                 </p>
             </div>
         </div>
@@ -261,11 +280,11 @@
                     </div> 
                
                 <div class="navigation" id="navigation-1">
-                        <label for="r1" class="bar int"></label>
+                        <label for="r1" class="bar"></label>
                         <label for="r2" class="bar"></label>
                         <label for="r3" class="bar"></label>
                         <label for="r4" class="bar"></label>
-                        <label for="r5" class="bar end"></label>
+                        <label for="r5" class="bar"></label>
                 </div>
                 
             </div>
@@ -305,15 +324,23 @@
        <div class="icone">
            <img src="{% static 'fotos/instagram.svg' %}" alt="">
            <ul>
+               {% if contatos.instagam %}
+               <li>{{ contatos.instagam }}</li>
+               {% else %}
                <li>@frutodefavela</li>
+               {% endif %}
            </ul>
        </div>
 
        <div class="icone">
            <img src="{% static 'fotos/whatsapp.svg' %}" alt="">
            <ul>
-               <li>(81)9 9663-2650</li>
-               <li>(81)9 8873-2533</li>
+                {% if contatos.telefone %}
+                <li>{{ contatos.telefone }}</li>
+                {% else %}
+                <li>(81)9 9663-2650</li>
+                <li>(81)9 8873-2533</li>
+                {% endif %}
            </ul>
        </div>
 
