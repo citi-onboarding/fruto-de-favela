@@ -122,8 +122,8 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    top: 21vh;
     color: #FFFFFF;
+    margin-bottom: 50px;
 }
 .pilar{
     max-width: 22vw;
@@ -142,6 +142,7 @@ p{
     position: absolute;
     right: 50vw;
     bottom: 3vh;
+    /*margin-top: 20px;*/
     
 }
 .btn-v{
@@ -314,7 +315,7 @@ input[name="p"]{
 /*Sessão parcerias desktop inicio*/
 
 #sec-parcerias-id {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     color: #814223
@@ -354,7 +355,7 @@ input[name="p"]{
 /*Seção contato desktop inicio*/
 
 #sec-contato-id {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -520,7 +521,7 @@ footer li{
     .ul-menu_mobile{
         position: fixed;
         top: 30%;
-        left: 42%;
+        left: 115%;
         transform: translate(-50%, -50%);
         list-style: none;
         font-size: 35px;
@@ -534,7 +535,6 @@ footer li{
         display: block;
         margin-bottom: 1em;
         text-decoration: none;
-        /*z-index: 10;*/
     }
     .a-menu:hover{
         transform: scale(1.1);
@@ -561,10 +561,13 @@ footer li{
     }
     .input-hamburguer:checked ~ ul{
         opacity: 1;
-        z-index: 10;
+        z-index: 12;
+        left: 42%;
+        transition: 0.4s;
     }
     .input-hamburguer:checked ~ label .menu_hamburguer{
         box-shadow: 0 0 0 130vw white, 0 0 0 130vw white;
+        z-index: 12;
     }
     .input-hamburguer:checked ~ label .hamburguer{
         transform: rotate(45deg);
