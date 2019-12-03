@@ -171,6 +171,7 @@ p{
 /*Sessão quem somos desktop fim*/
 
 /*Sessão programas desktop*/
+/*
 .sec-programas{
    display: flex;
    flex-direction: column;
@@ -191,7 +192,51 @@ p{
 .sec-programas p{
     color: #F6921D;
 }
+/* teste slick inicio*/
 
+.sec-programas{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+.carrocel{
+    width: 800px;
+    height: 400px;
+}
+
+.carrocel img{
+    width: 400px;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.separador{
+    height: 250px;
+    width: 3px;
+    background-color: orange;
+    margin: 60px 20px;
+}
+.text-slide{
+    width: 340px;
+    height: 300px;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+.slick-dots li button:before{
+    content: '';
+    border: 2px solid orange;
+    height: 15px;
+    width: 15px;
+ }
+ .slick-dots {
+    left: -193px;
+ }
+/*teste slik fim*/
+
+
+/*
 .slidershow{
     width: 780px;
     height: 50vh;
@@ -306,7 +351,7 @@ input[name="p"]{
 }
 #r5:checked ~ .s1{
     margin-left: -80%;
-}
+}*/
 
 
 
@@ -624,7 +669,14 @@ footer li{
      
     /*Seção Quem somos mobile fim*/
 
+    /*Sesão programas mobile inicio com snick*/
+
+    
+
+    /*Sesão programas mobile fim com snick*/
+
     /*Seção programas mobile inicio*/
+    /*
     .sec-programas{
         display: flex;
         flex-direction: column;
@@ -645,7 +697,7 @@ footer li{
          color: #F6921D;
      }
      
-     .slidershow{
+     /*.slidershow{
          width: 290px; 
          height: 870px;
          overflow: none;
@@ -812,7 +864,7 @@ footer li{
     /*Sessão quem somos fim*/
 
     /*Sessão progrmas tablet*/
-
+/*
     .sec-programas{
         display: flex;
         flex-direction: column;
@@ -834,7 +886,7 @@ footer li{
          color: #F6921D;
      }
      
-     .slidershow{
+     /*.slidershow{
          width: 780px;
          height: 50vh;
          overflow: hidden;
