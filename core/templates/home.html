@@ -9,12 +9,13 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'fontes/Matapacos_FREE.ttf' %}">
+    <link rel="icon" href="{% static 'fotos/FF_Pictograma.png' %}">
     <title>Fruto de Favela</title>
 </head>
 <body>
     <header class="header" id="header-id">
         <div class="logo_header" id="logo_header-id">
-          <img src="{% static 'fotos/FF_Logo_Horizontal.png' %}" alt="" class="img-logo">      
+          <img src="{% static 'fotos/logoBaner.svg' %}" alt="" class="img-logo">      
         </div>
         <nav class="nav-bar" id="nav-bar-id">         
             <div class="btn-pai">
@@ -31,22 +32,29 @@
                 </div>
             </label>
             <ul class="ul-menu_mobile" id="ul menu_mobile-id">
-                <li><a href="#sec-inicio-id" class="a-menu">Inicio</a></li>
-                <li><a href="#sec-quem_somos-id" class="a-menu">Sobre nós</a></li>
-                <li><a href="#sec-programas-id" class="a-menu">Programas</a></li>
-                <li><a href="#sec-parcerias-id" class="a-menu">Parcerias</a></li>
-                <li><a href="#sec-contato-id" class="a-menu">Contato</a></li>
+                <li><a href="#sec-inicio-id" class="a-menu a-1">Inicio</a></li>
+                <li><a href="#sec-quem_somos-id" class="a-menu a-2">Sobre nós</a></li>
+                <li><a href="#sec-programas-id" class="a-menu a-3">Programas</a></li>
+                <li><a href="#sec-parcerias-id" class="a-menu a-4">Parcerias</a></li>
+                <li><a href="#sec-contato-id" class="a-menu a-5">Contato</a></li>
             </ul>
         </nav>
     </header>
     <section class="sec-inicio" id="sec-inicio-id">
-        {% if banner.imagemBanner  %}
+        {% if banner.imagemBanner %}
         <img src="{{ banner.imagemBanner.url }}" alt="" class="img-inicio">
         {% else %}
         <img src="{% static 'fotos/ff.jpg' %}" alt="" class="img-inicio">
         {% endif %}
-        <img src="{% static 'fotos/FF_Logo_Horizontal.png' %}" alt="" class="img-logo_inicio">
+        <img src="{% static 'fotos/logoVertical.svg' %}" alt="" class="img-logo_inicio">
     </section>
+    <div class="side-nav">
+        <a href="#sec-inicio-id"><div class="cel side-nav-inicio"></div></a>
+        <a href="#sec-quem_somos-id"><div class="cel side-nav-sobre_nos"></div></a>
+        <a href="#sec-programas-id"><div class="cel side-nav-programas"></div></a>
+        <a href="#sec-parcerias-id"><div class="cel side-nav-parcerias"></div></a>
+        <a href="#sec-contato-id"><div class="cel side-nav-contatos"></div></a>
+    </div>
     <section class="sec-quem_somos" id="sec-quem_somos-id">
         <div class="div-quem_somos" id ="div-quem_somos-id">
             <h2 class="h2-quem_somos">Quem somos ?</h2>
