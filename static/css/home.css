@@ -89,6 +89,9 @@ p{
 .sec-inicio{
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .input-hamburguer{
     visibility: hidden;
@@ -102,8 +105,8 @@ p{
 }
 
 .img-logo{
-    max-width: 207px;
-    max-height: 500px;
+    width: 207px;
+    height: 500px;
 }
 .img-inicio{
     width: 100vw;
@@ -112,12 +115,13 @@ p{
     margin-bottom: -4px;
 }
 .img-logo_inicio{
-    position: absolute;
+    position: absolute; 
     z-index: 0;
-    left: 15%;
-    top: 22%;
-    max-width: 70vw;
-    max-height: 70vh;
+    /* left: 15%;
+    top: 22%; */
+    max-width: 90vw;
+    max-height: 90vh;
+    margin-top: 7%;
 }
 
 .btn{
@@ -407,17 +411,15 @@ footer li{
     .logo_header{
         width: 170px;
         height: 70px;
-        background-color: white;
     }
     .img-logo{
         max-width: 207px;
         max-height: 70px;
     }
     .img-inicio{
-        /*max-width: auto;*/
         width: auto;
         height: 90vh;
-        
+
     }
     .btn{
         overflow: hidden;

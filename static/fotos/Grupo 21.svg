@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1318.963" height="499.937" viewBox="0 0 1318.963 499.937">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffb865;
+        stroke: #ffb865;
+      }
+
+      .cls-2, .cls-6, .cls-9 {
+        fill: #f6921d;
+      }
+
+      .cls-3 {
+        fill: #e2820f;
+        stroke: #e2820f;
+      }
+
+      .cls-4 {
+        fill: #ffddb5;
+        stroke: #ffddb5;
+      }
+
+      .cls-5 {
+        fill: #eb7f00;
+        stroke: #eb7f00;
+      }
+
+      .cls-6 {
+        stroke: #f6921d;
+      }
+
+      .cls-7 {
+        fill: #c86c01;
+        stroke: #c86c01;
+      }
+
+      .cls-8, .cls-9 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_21" data-name="Grupo 21" transform="translate(-602.637 -2149.584)">
+    <path id="Caminho_12" data-name="Caminho 12" class="cls-1" d="M0,316.731H246L121.551,0" transform="translate(1787.231 2401.108) rotate(107)"/>
+    <g id="Subtração_1" data-name="Subtração 1" class="cls-2" transform="translate(1921.5 2472.585) rotate(180)">
+      <path class="cls-8" d="M 434.2047119140625 161.0032653808594 L 0.5042625069618225 161.0032653808594 L 0.4999847412109375 161.0032653808594 L 0.4999847412109375 0.7178319692611694 L 434.2047119140625 161.0032653808594 Z"/>
+      <path class="cls-9" d="M 0.999969482421875 1.4356689453125 L 0.999969482421875 160.5032653808594 L 431.409423828125 160.5032653808594 L 0.999969482421875 1.4356689453125 M -3.0517578125e-05 0 L 437 161.5032653808594 L 0.5042724609375 161.5032653808594 L 0.5042724609375 322.4998779296875 L 1.357757568359375 322.4998779296875 L -3.0517578125e-05 323.0018615722656 L -3.0517578125e-05 0 Z"/>
+    </g>
+    <path id="Caminho_10" data-name="Caminho 10" class="cls-3" d="M18514.9,3741.584,18951.5,4079V3902.234Z" transform="translate(-17030.398 -1430.5)"/>
+    <path id="Caminho_11" data-name="Caminho 11" class="cls-4" d="M19074.533,4076.492l-129.389-100.535,202.068-131.783Z" transform="translate(-17662.717 -1533.581)"/>
+    <path id="Caminho_13" data-name="Caminho 13" class="cls-5" d="M19191.285,4076.561l-239.453-129.823h440.838Z" transform="translate(-17908.955 -1634.395)"/>
+    <path id="Caminho_14" data-name="Caminho 14" class="cls-6" d="M19640.113,4077.286c-474.107-15.454-488.664-16.493-488.664-16.493l26.234-112.874h235.936l240.01,129.367" transform="translate(-18369.992 -1635.12)"/>
+    <path id="Caminho_16" data-name="Caminho 16" class="cls-7" d="M21351.117,3497.341l-26.3,111.986-180.029-111.986" transform="translate(-20541.885 -1183.582)"/>
+  </g>
+</svg>
