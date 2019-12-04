@@ -47,6 +47,32 @@ p{
 .btn-inicio:active{
     src: local('#sec-programas-id');
 }
+
+/*.side-nav-inicio{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    right: 10px;
+}*/
+.side-nav-inicio{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    right: 10px;
+    top: 30%;
+    background-image: url('../fotos/home.svg');
+}
+.side-nav-sobre_nos{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    right: 10px;
+    top: 50%;
+    background-image: url('../fotos/FF_Pictograma.png');
+}
 /*sessão inicio desktop*/
 
 .sec-inicio{
@@ -179,6 +205,12 @@ p{
     flex-direction: column;
     overflow: hidden;
     align-items: center;
+}
+.sec-programas p{
+    color: orange;
+}
+.sec-programas h2{
+    color: orange;
 }
 
 .slide-nav{
@@ -434,7 +466,7 @@ footer li{
     }
     .ul-menu_mobile{
         position: fixed;
-        top: 30%;
+        top: 35%;
         left: 115%;
         transform: translate(-50%, -50%);
         list-style: none;
@@ -480,7 +512,7 @@ footer li{
         transition: 0.4s;
     }
     .input-hamburguer:checked ~ label .menu_hamburguer{
-        box-shadow: 0 0 0 130vw white, 0 0 0 130vw white;
+        box-shadow: 0 0 0 160vw white, 0 0 0 160vw white;
         z-index: 12;
     }
     .input-hamburguer:checked ~ label .hamburguer{
