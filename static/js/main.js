@@ -27,5 +27,3 @@ if ( window.innerWidth <=  930){
         variableWidth: true
     });
 }
-
-
