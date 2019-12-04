@@ -64,6 +64,9 @@ p{
     background-repeat: no-repeat;
     background-position: center;
 }
+.cel:hover{
+    transform: scale(1.5);
+}
 .side-nav-inicio{
     background-image: url('../fotos/home.svg');
     
