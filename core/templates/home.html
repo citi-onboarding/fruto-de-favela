@@ -9,23 +9,21 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'fontes/Matapacos_FREE.ttf' %}">
-    <title>Document</title>
+    <title>Fruto de Favela</title>
 </head>
 <body>
     <header class="header" id="header-id">
         <div class="logo_header" id="logo_header-id">
           <img src="{% static 'fotos/FF_Logo_Horizontal.png' %}" alt="" class="img-logo">      
         </div>
-        <nav class="nav-bar" id="nav-bar-id">
-
+        <nav class="nav-bar" id="nav-bar-id">         
             <div class="btn-pai">
-                <button class="btn btn-inicio" id="btn-inicio-id">Inicio</button>
-                <button class="btn btn-sobre_nos" id="btn-sobre_nos-id">Sobre nós</button>
-                <button class="btn btn-projetos" id="btn-projetos-id">Projetos</button>
-                <button class="btn btn-parcerias" id="btn-parcerias-id">Parcerias</button>
-                <button class="btn btn-contato" id="btn-contato-id">Contato</button>  
+                <a href="#sec-inicio-id"><button class="btn btn-inicio" id="btn-inicio-id">Inicio</button></a>
+                <a href="#sec-quem_somos-id"><button class="btn btn-sobre_nos" id="btn-sobre_nos-id">Sobre nós</button></a>
+                <a href="#sec-programas-id"><button class="btn btn-projetos" id="btn-projetos-id">Programas</button></a>
+                <a href="#sec-parcerias-id"><button class="btn btn-parcerias" id="btn-parcerias-id">Parcerias</button></a>
+                <a href="#sec-contato-id"><button class="btn btn-contato" id="btn-contato-id">Contato</button></a>  
             </div>  
-
            <input type="checkbox" class="input-hamburguer" id="input-hamburguer-id">
             <label for="input-hamburguer-id" class="label-hamburguer">
                 <div class="menu_hamburguer" id="menu_hamburguer-id"> 
@@ -33,11 +31,11 @@
                 </div>
             </label>
             <ul class="ul-menu_mobile" id="ul menu_mobile-id">
-                <li><a href="#" class="a-menu">Inicio</a></li>
-                <li><a href="#" class="a-menu">Sobre nós</a></li>
-                <li><a href="#" class="a-menu">Projetos</a></li>
-                <li><a href="#" class="a-menu">Parcerias</a></li>
-                <li><a href="#" class="a-menu">Contato</a></li>
+                <li><a href="#sec-inicio-id" class="a-menu">Inicio</a></li>
+                <li><a href="#sec-quem_somos-id" class="a-menu">Sobre nós</a></li>
+                <li><a href="#sec-programas-id" class="a-menu">Programas</a></li>
+                <li><a href="#sec-parcerias-id" class="a-menu">Parcerias</a></li>
+                <li><a href="#sec-contato-id" class="a-menu">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -128,7 +126,7 @@
             </div>
 
     </section>
-    <section class="sec-programas">
+    <section class="sec-programas" id="sec-programas-id">
         <div class="div-h2Programas">
             <h2 class="h2-programas">Nossos programas</h2>
         </div>
@@ -265,171 +263,8 @@
                 </p>
                 </div>
         </div> 
-    </section>
-    <!--<section class="sec-programas">
-        <div class="div-h2Programas">
-            <h2 class="h2-programas">Nossos programas</h2>
-        </div>
         
-            <div class="slidershow middle">
-                
-                    <div class="slides">
-                        <input type="radio" name="r" id="r1" checked>
-                        <input type="radio" name="r" id="r2">
-                        <input type="radio" name="r" id="r3">
-                        <input type="radio" name="r" id="r4">
-                        <input type="radio" name="r" id="r5">
-                        
-                        <div class="slide s1">                                  
-                        <img src="{% static 'fotos/1.jpg' %}" alt="">
-                        </div>
-
-                        <div class="separador"></div>
-
-                        <div class="div-text">
-                        <h2>titulo-1</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                        </p>
-                        </div>
-
-                        <div class="slide">
-                        <img src="{% static 'fotos/2.jpg' %}" alt="">
-                        </div>
-
-                        <div class="separador"></div>
-
-                        <div class="div-text">
-                        <h2>titulo-2</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                        </p>
-                        </div>
-
-                        <div class="slide">
-                        <img src="{% static 'fotos/3.jpg' %}" alt="">
-                        </div>
-
-                        <div class="separador"></div>
-
-                        <div class="div-text">
-                        <h2>titulo-3</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                        </p>
-                        </div>
-
-                        <div class="slide">
-                        <img src="{% static 'fotos/4.jpg' %}" alt="">
-                        </div>
-
-                        <div class="separador"></div>
-
-                        <div class="div-text">
-                        <h2>titulo-4</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                        </p>
-                        </div>
-
-                        <div class="slide">
-                        <img src="{% static 'fotos/5.jpg' %}" alt="">
-                        </div>
-
-                        <div class="separador"></div>
-
-                        <div class="div-text">
-                        <h2>titulo-5</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi unde possimus quae 
-                            atque sint? Non beatae ad, maiores iste similique 
-                            itaque qui, quisquam, laborum quod adipisci impedit 
-                            fugiat repudiandae corrupti!
-                        </p>
-                        </div>
-
-
-                    </div> 
-               
-                <div class="navigation" id="navigation-1">
-                        <label for="r1" class="bar"></label>
-                        <label for="r2" class="bar"></label>
-                        <label for="r3" class="bar"></label>
-                        <label for="r4" class="bar"></label>
-                        <label for="r5" class="bar"></label>
-                </div>
-                
-            </div>
-            
-       
-    </section>-->
+    </section>
     <section class="sec-parcerias" id="sec-parcerias-id">
         <h2>Parcerias</h2>
         <div id="parcerias">
@@ -459,7 +294,6 @@
         </div>
     </section>
    <footer>
-
        <div class="icone">
            <img src="{% static 'fotos/instagram.svg' %}" alt="">
            <ul>
@@ -470,7 +304,6 @@
                {% endif %}
            </ul>
        </div>
-
        <div class="icone">
            <img src="{% static 'fotos/whatsapp.svg' %}" alt="">
            <ul>
@@ -482,7 +315,6 @@
                 {% endif %}
            </ul>
        </div>
-
    </footer>
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
