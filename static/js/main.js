@@ -31,6 +31,7 @@ if ( window.innerWidth <=  930){
         slidesToScroll: 3,
         variableWidth: true
     });
+
 }
 
 btnHamburguer1.addEventListener('click', ()=>{
@@ -48,4 +49,5 @@ btnHamburguer4.addEventListener('click', ()=>{
 btnHamburguer5.addEventListener('click', ()=>{
     imputHamburguer.checked = false;
 });
+
 

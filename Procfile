@@ -1,0 +1,1 @@
+web: gunicorn Fruto_de_Favela.wsgi

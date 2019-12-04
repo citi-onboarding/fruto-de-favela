@@ -30,5 +30,5 @@ def email(request):
 
     subject = assunto
     body = f'Nome: {nome}\nEmail: {email}\nMensagem: {mensagem}'
-    mail = EmailMessage(subject, body, 'emailteste232@gmail.com', ['emailteste232@gmail.com', 'alysonrenan99@gmail.com'])
+    mail = EmailMessage(subject, body, 'frutodefavela.citi@gmail.com', ['frutodefavela.citi@gmail.com', 'alysonrenan99@gmail.com'])
     result = mail.send()
