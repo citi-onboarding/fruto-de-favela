@@ -458,6 +458,19 @@ footer li{
     align-items: center;
 }
 
+#codebyciti {
+    display: flex;
+    color: white;
+}
+
+#codebyciti img {
+    width: 30px;
+}
+
+.citiFooter {
+    width: 70px!important;
+}
+
 /*Sessão footer desktop fim*/
 
 /*Parte mobile*/
@@ -477,8 +490,7 @@ footer li{
     }
     .img-inicio{
         width: auto;
-        height: 90vh;
-
+        height: 100vh;
     }
 
     #logo {
@@ -722,6 +734,29 @@ footer li{
     }
     /*Seção contato mobile inicio*/
 
+    /*footer mobyle*/
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    #contatosFooter {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+    }
+
+    #contatosFooter  p{
+        font-size: 1em;
+    }
+
+    #contatosFooter div {
+        margin: 5px 0px;
+    }
+
+    #codebyciti {
+        margin-top: 10px;
+    }
+    
 }
 /*parte mobile fim*/
 
