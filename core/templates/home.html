@@ -56,7 +56,7 @@
         {% endif %}
         <div id="logo">
             <img src="{% static 'fotos/logoVertical.svg' %}" alt="Fruto de Favela">
-            <img src="{% static 'fotos/subtitulo.svg' %}"/>
+            <img src="{% static 'fotos/subtitulo.svg' %}" class="subtitulo"/>
         </div>
     </section>
     <section class="sec-quem_somos" id="sec-quem_somos-id">
@@ -589,26 +589,43 @@
     </section>
     
    <footer>
-       <div class="icone">
-           <img src="{% static 'fotos/instagram.svg' %}" alt="">
-           <ul>
-               {% if contatos.instagam %}
-               <li>{{ contatos.instagam }}</li>
-               {% else %}
-               <li>@frutodefavela</li>
-               {% endif %}
-           </ul>
+       
+       <div id="contatosFooter">
+            <div class="instagram">
+                <img src="{% static 'fotos/instagram.svg' %}" alt="">
+                
+                    {% if contatos.instagam %}
+                    <p>{{ contatos.instagam }}</p>
+                    {% else %}
+                    <p>@frutodefavela</p>
+                    {% endif %}
+            
+            </div>
+            <div class="whatsapp">
+                <img src="{% static 'fotos/whatsapp.svg' %}" alt="">
+                <div class="numeros">
+                    {% if contatos.telefone %}
+                    <p>{{ contatos.telefone }}</p>
+                    {% else %}
+                    <p>(81)9 9663-2650</p>
+                    <p>(81)9 8873-2533</p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="email">
+                    <img src="{% static 'fotos/envelope.svg' %}" alt="">
+                    <div class="numeros">
+                        {% if contatos.email %}
+                        <p>{{ contatos.email }}</p>
+                        {% else %}
+                        <p>frutodefavela@gmail.com</p>
+                        {% endif %}
+                    </div>
+                </div>
+            
        </div>
-       <div class="icone">
-           <img src="{% static 'fotos/whatsapp.svg' %}" alt="">
-           <ul>
-                {% if contatos.telefone %}
-                <li>{{ contatos.telefone }}</li>
-                {% else %}
-                <li>(81)9 9663-2650</li>
-                <li>(81)9 8873-2533</li>
-                {% endif %}
-           </ul>
+       <div id="codebyciti">
+            dasdbausbdu
        </div>
    </footer>
     <script
