@@ -1,33 +1,11 @@
 body{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
-
-header{
-    overflow: hidden !important;
-    background-color: #F6921D;
-    max-width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 70px;
-}
-nav{
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-
-
 
 @font-face{
     font-family: 'Titulo';
     src: url("../fontes/Matapacos_FREE.ttf");
-
-    
 }
 
 @font-face{
@@ -38,92 +16,45 @@ nav{
 h2{
     font-family: 'Titulo';
     font-size: 40px;
+    font-weight: lighter;
 }
 
 p{
     font-family: 'paragrafo';
 }
 
-.btn-inicio:active{
-    src: local('#sec-programas-id');
-}
-
-.side-nav{
-    position: fixed;
-    right: 10px;
-    top: calc(100vh/4);
-    z-index: 15;
-}
-.cel{
-    height: 30px;
-    width: 30px;
-    background-color: orange;
-    margin: 20px 0px;
-    background-size: contain;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.cel:hover{
-    transform: scale(1.5);
-}
-.side-nav-inicio{
-    background-image: url('../fotos/home.svg');
-    
-}
-.side-nav-sobre_nos{
-   background-image: url('../fotos/FF_Pictograma.png');
-   
-}
-.side-nav-programas{
-    background-image: url('../fotos/calendar.svg');
-}
-.side-nav-parcerias{
-    background-image: url('../fotos/partner.svg');
-}
-.side-nav-contatos{
-    background-image: url('../fotos/user.svg');
-}
-/*sessão inicio desktop*/
-
-.sec-inicio{
-    overflow: hidden;
-    position: relative;
+/*header inicio desktop*/
+#header-id{
+    overflow: hidden !important;
+    max-width: 100vw;
+    height: 70px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    background-color: #F6921D;
 }
+
+.img-logo{
+    width: 200px;
+}
+
 .input-hamburguer{
     visibility: hidden;
-    
 }
+
 .ul-menu_mobile{
     visibility: hidden;
 }
+
 .label-hamburguer{
     visibility: hidden;
 }
 
-.img-logo{
-    width: 207px;
-    height: 500px;
+.btn-inicio:active{
+    src: local('#sec-programas-id');
 }
-.img-inicio{
-    width: 100vw;
-    /*object-fit: cover;*/
-    max-height: 100vh;
-    margin-bottom: -4px;
-}
-.img-logo_inicio{
-    position: absolute; 
-    z-index: 0;
-    /* left: 15%;
-    top: 22%; */
-    max-width: 90vw;
-    max-height: 90vh;
-    margin-top: 7%;
-}
-
+ 
 .btn{
     box-sizing: border-box;
     margin: 10px;
@@ -135,79 +66,111 @@ p{
     font-size: 20px;
     text-align: center;
 }
+
 .btn:hover{
     border-top: 2px solid white;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.side-nav{
+    position: fixed;
+    right: 10px;
+    top: calc(100vh/4);
+    z-index: 3;
+}
+
+.cel{
+    width: 20px;
+    height: 20px;
+    margin: 20px 0px;
+    padding: 5px;
+    background-color: #814223;
+}
+
+.cel:hover{
+    transform: scale(1.5);
+}
+
+.cel svg {
+    width: 100%;
+    height: 100%;
+}
+/*header fim desktop*/
+
+/*sessão inicio desktop*/
+.sec-inicio{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-inicio{
+    width: 100vw;
+    max-height: 100vh;
+}
+
+.img-logo_inicio{
+    width: 60vw;
+    z-index: 2;
+    position: absolute; 
+}
 /*Sessão inicio desktop fim*/
 
-
 /*Sessão quem somos desktop */
-
 .sec-quem_somos{
-    background-color: #368687;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 500px;
+    min-height: 70vh;
+    position: relative;
+    background-color: #368687;
 }
-.h2-quem_somos{
-    margin-left: 20px;
-    margin-right: 10px;
+
+.div-quem_somos{
+    max-width: 75vw;
+    padding: 0px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 6px #000029;
+    position: absolute;
+    top: -50px;
+    color: #368687;
+    background-color: white;
 }
-.p-quem_somos{
-    margin-left: 20px;
-    margin-right: 10px;
-}
+
 .tres_pilares{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
     color: #FFFFFF;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
+
 .pilar{
     max-width: 22vw;
     box-sizing: border-box;
-    margin: 40px; 
+    margin: 30px; 
 }
-.div-quem_somos{
-    max-width: 75vw;
-    border-radius: 25px;
-    background-color: white;
-    position: absolute;
-    top: -50px;
-    color: #368687;
-}
-.btn-v_pai{
-    position: absolute;
-    right: 50vw;
-    bottom: 3vh;
-    /*margin-top: 20px;*/
-    
-}
+
 .btn-v{
-    width: 30px;
-    height: 5px;
-    background-color: #FFFFFF;
-    margin:-5px;
-    transform: rotate(50deg);
-    position: relative;
-    border-radius: 20%;
-}
-.btn-v::after{
-    content: '';
-    display: block;
-    width: 30px;
-    height: 5px;
-    background-color: #FFFFFF;
-    transform: rotate(80deg);
+    width: 80px;
+    height: 50px;
+    left: calc(50vw - 40px);
+    bottom: 3vh;
     position: absolute;
-    right: -12px;
-    top: -14px;
-    border-radius: 20%;
+}
+
+.btn-v svg {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -648,18 +611,18 @@ footer li{
         flex-direction: column;
         align-items: center;
         background-color: #368687;
-        position: relative;
+ /*       position: relative;
         height: 60vh;
         max-height: 100vh;
-        min-height: 800px;
+        min-height: 800px;*/
     }
     .tres_pilares{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         position: relative;
-        top: 21vh;
-        margin-left: 10px;
+/*        top: 21vh;
+        margin-left: 10px;*/
     }
     .pilar{
         max-width: 22vw;

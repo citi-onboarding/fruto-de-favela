@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="78.639" height="44.963" viewBox="0 0 78.639 44.963">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" class="cls-1" d="M45.521,42.655,75.256,12.9a5.6,5.6,0,0,1,7.937,0,5.667,5.667,0,0,1,0,7.96L49.5,54.572a5.609,5.609,0,0,1-7.75.164L7.826,20.881a5.621,5.621,0,0,1,7.937-7.96Z" transform="translate(-6.188 -11.247)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="78.639" height="44.963" viewBox="0 0 78.639 44.963"><defs><style>.cls-1 {fill: #fff;}</style></defs><path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" class="cls-1" d="M45.521,42.655,75.256,12.9a5.6,5.6,0,0,1,7.937,0,5.667,5.667,0,0,1,0,7.96L49.5,54.572a5.609,5.609,0,0,1-7.75.164L7.826,20.881a5.621,5.621,0,0,1,7.937-7.96Z" transform="translate(-6.188 -11.247)"/></svg>

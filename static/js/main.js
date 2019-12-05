@@ -8,11 +8,8 @@ const btnHamburguer5 = document.querySelector('.a-5');
 const imputHamburguer = document.querySelector('.input-hamburguer');
 const sideNav = document.querySelector('.side-nav');
 
-/*tresPilares.style.marginTop = `${ espaco.offsetHeight -130 }px`;*/
+tresPilares.style.marginTop = `${ espaco.clientHeight-50 }px`;
 
-
-
-tresPilares.style.marginTop = `${ espaco.offsetHeight -90 }px`;
 /* slick teste */
 
     if ( window.innerWidth <=  930){
@@ -53,7 +50,7 @@ btnHamburguer5.addEventListener('click', ()=>{
 });
 
 window.addEventListener('resize',()=>{
-    tresPilares.style.marginTop = `${ espaco.offsetHeight -90 }px`;
+    tresPilares.style.marginTop = `${ espaco.clientHeight-50 }px`;
 
     if ( window.innerWidth <=  930){
     $('.carrocel').slick({
@@ -76,7 +73,7 @@ window.addEventListener('resize',()=>{
 });
 
 window.addEventListener('load',()=>{
-    tresPilares.style.marginTop = `${ espaco.offsetHeight -90 }px`;
+    tresPilares.style.marginTop = `${ espaco.clientHeight-50 }px`;
 
     if ( window.innerWidth <=  930){
     $('.carrocel').slick({
@@ -99,7 +96,7 @@ window.addEventListener('load',()=>{
 });
 
 setInterval(()=>{
-    if(window.pageYOffset > 70) {
+    if(window.pageYOffset > 69) {
         sideNav.style.visibility = 'visible';
     }else{
         sideNav.style.visibility = 'hidden';
