@@ -7,7 +7,6 @@ const btnHamburguer4 = document.querySelector('.a-4');
 const btnHamburguer5 = document.querySelector('.a-5');
 const imputHamburguer = document.querySelector('.input-hamburguer');
 const sideNav = document.querySelector('.side-nav');
-const textoCarrocel = document.querySelectorAll('.p-textSlide');
 
 tresPilares.style.marginTop = `${ espaco.clientHeight-50 }px`;
 
@@ -31,12 +30,6 @@ $('.carrocel').slick({
         variableWidth: true
     });
 }
-textoCarrocel.forEach((e)=>{
-    if(e.style.height < 10){
-        e.style.overflowY = 'scroll';
-        console.log('x');
-    }
-});
 
 btnHamburguer1.addEventListener('click', ()=>{
     imputHamburguer.checked = false;
