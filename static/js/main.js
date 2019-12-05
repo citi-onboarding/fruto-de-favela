@@ -7,31 +7,36 @@ const btnHamburguer4 = document.querySelector('.a-4');
 const btnHamburguer5 = document.querySelector('.a-5');
 const imputHamburguer = document.querySelector('.input-hamburguer');
 const sideNav = document.querySelector('.side-nav');
+const textoCarrocel = document.querySelectorAll('.p-textSlide');
 
 tresPilares.style.marginTop = `${ espaco.clientHeight-50 }px`;
 
 /* slick teste */
 
-    if ( window.innerWidth <=  930){
+if ( window.innerWidth <=  930){
+$('.carrocel').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    rows: 3
+});
+}else{
     $('.carrocel').slick({
         dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        rows: 3
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        variableWidth: true
     });
-    }else{
-        $('.carrocel').slick({
-            dots: true,
-            infinite: false,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            variableWidth: true
-        });
+}
+textoCarrocel.forEach((e)=>{
+    if(e.style.height < 10){
+        e.style.overflowY = 'scroll';
+        console.log('x');
     }
-
-
+});
 
 btnHamburguer1.addEventListener('click', ()=>{
     imputHamburguer.checked = false;
