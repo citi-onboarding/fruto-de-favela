@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1318mm"
+   height="341mm"
+   viewBox="0 0 4670.0787 1208.2677"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="svgFooter.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.13"
+     inkscape:cx="2226.4149"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,155.90551)">
+    <g
+       id="g4158"
+       transform="matrix(3.5387814,0,0,3.5387814,-93.062525,432.2518)">
+      <path
+         id="Caminho_12"
+         data-name="Caminho 12"
+         class="clsv-1"
+         d="m 464.82591,176.81609 71.92344,-235.250972 -339.27673,26.40799"
+         inkscape:connector-curvature="0"
+         style="fill:#d06330;stroke:#d06330" />
+      <g
+         id="Subtração_1"
+         data-name="Subtração 1"
+         class="clsv-2"
+         transform="translate(27.666612,12.735628)"
+         style="fill:#c63f00">
+        <path
+           class="clsv-6"
+           d="m 434.20471,161.00319 -433.70044749,0 -0.004278,0 0,-160.2853234 L 434.20471,161.00319 Z"
+           id="path11"
+           inkscape:connector-curvature="0"
+           style="stroke:none" />
+        <path
+           class="clsv-7"
+           d="m 0.99996948,1.4356689 0,159.0675211 430.40945052,0 L 0.99996948,1.4356689 M -3.0517578e-5,-3.0517578e-5 437,161.50319 l -436.49572754,0 0,160.99657 0.85348514,0 -1.357788117578,0.50192 0,-323.001710517578 z"
+           id="path13"
+           inkscape:connector-curvature="0"
+           style="fill:#c63f00;stroke:none" />
+      </g>
+      <path
+         id="Caminho_10"
+         data-name="Caminho 10"
+         class="clsv-3"
+         d="m 464.66661,174.23563 -436.599998,-337.417 0,176.766998 z"
+         inkscape:connector-curvature="0"
+         style="fill:#d46f40;stroke:#d46f40" />
+      <path
+         id="Caminho_11"
+         data-name="Caminho 11"
+         class="clsv-4"
+         d="m 536.99261,-57.590372 129.389,100.535 -202.068,131.783002 z"
+         inkscape:connector-curvature="0"
+         style="fill:#c63f00;stroke:#c63f00" />
+      <path
+         id="Caminho_13"
+         data-name="Caminho 13"
+         class="clsv-5"
+         d="m 666.38161,43.154628 239.45298,131.573002 -440.83798,0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#e6ac91;stroke:#e6ac91" />
+      <path
+         id="Caminho_14"
+         data-name="Caminho 14"
+         class="clsv-4"
+         d="m 678.13161,43.154628 c 474.10699,15.658 488.66399,16.712 488.66399,16.712 l -26.234,114.369002 -235.93601,0 L 664.61561,43.154628"
+         inkscape:connector-curvature="0"
+         style="fill:#c63f00;stroke:#c63f00" />
+      <path
+         id="Caminho_16"
+         data-name="Caminho 16"
+         class="clsv-3"
+         d="m 1139.0196,174.23563 26.3,-114.659002 180.032,114.659002"
+         inkscape:connector-curvature="0"
+         style="fill:#d46f40;stroke:#d46f40" />
+    </g>
+  </g>
+</svg>

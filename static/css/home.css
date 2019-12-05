@@ -113,15 +113,22 @@ nav{
     overflow: hidden;
 }
 
+#logo {
+    width: 50vw;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo img {
+    width: 100%;
+    z-index: 2;
+}
+
 .img-inicio{
     width: 100vw;
     max-height: 100vh;
-}
-
-.img-logo_inicio{
-    width: 60vw;
-    z-index: 2;
-    position: absolute; 
 }
 /*Sessão inicio desktop fim*/
 
@@ -161,9 +168,9 @@ nav{
 }
 
 .btn-v{
-    width: 80px;
-    height: 50px;
-    left: calc(50vw - 40px);
+    width: 40px;
+    height: 25px;
+    left: calc(50vw - 20px);
     bottom: 3vh;
     position: absolute;
 }
@@ -172,26 +179,20 @@ nav{
     width: 100%;
     height: 100%;
 }
-
-
 /*Sessão quem somos desktop fim*/
 
 /* Sessão programas slick inicio*/
-
 .sec-programas{
     display: flex;
+    position: relative;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
-}
-.sec-programas p{
-    color: orange;
-}
-.sec-programas h2{
-    color: orange;
+    padding: 50px 0px 100px 0px;
+    color: #F88200;
 }
 
-.slide-nav{
+.slide-nav {
     visibility: hidden;
 }
 
@@ -199,47 +200,65 @@ nav{
     visibility: hidden; 
 }
 
-.carrocel{
+.carrocel {
     width: 800px;
     height: 100%;
 }
 
-.carrocel img{
+.carrocel img {
     width: 400px;
     height: 300px;
     margin-top: 40px;
 }
 
-.separador{
+.separador {
     height: 250px;
     width: 3px;
     background-color: orange;
     margin: 60px 20px;
 }
-.text-slide{
+
+.text-slide {
     width: 340px;
     height: 300px;
     margin-top: 0px;
     margin-right: 20px;
 }
-.slick-dots li button:before{
+
+.slick-dots li button:before {
     content: '';
     border: 2px solid orange;
     height: 15px;
     width: 15px;
  }
+
  .slick-dots {
     left: -193px;
  }
-/*Sessão programas slik fim*/
+
+.svgQuemSomos {
+    position: absolute;
+    width: 60vw;
+    top: -5px;
+    z-index: -1;
+    right: -5px;
+}
+
+.svgs svg{
+    width: 100%;
+    height: 100%;
+}
+ /*Sessão programas slik fim*/
 
 /*Sessão parcerias desktop inicio*/
-
 #sec-parcerias-id {
     width: 100%;
+    min-height: 70vh;
     display: flex;
+    position: relative;
+    padding: 150px 0px 300px 0px;
     flex-direction: column;
-    color: #814223
+    color: #814223;
 }
 
 #sec-parcerias-id h2 {
@@ -271,16 +290,32 @@ nav{
     text-align: center;
 }
 
+.svgParcerias {
+    position: absolute;
+    width: 60vw;
+    top: -150px;
+    left: 20px;
+    z-index: -1;
+}
+
+.svgContatos {
+    position: absolute;
+    width: 60vw;
+    bottom: 0px;
+    z-index: -1;
+    right: 0px;
+}
 /*Seção parcerias desktop fim*/
 
 /*Seção contato desktop inicio*/
-
 #sec-contato-id {
     width: 100%;
+    min-height: 70vh;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0px;
+    padding: 0px 0px 100px 0px;
 }
 
 #sec-contato-id h2 {
@@ -319,7 +354,6 @@ nav{
     cursor: pointer;
 }
 
-
 .btnEnviar:active {
     background-color: lightgray;
     border-radius: 9px;
@@ -331,10 +365,16 @@ nav{
     justify-content: center;
 }
 
+.svgFooter {
+    position: absolute;
+    width: 60vw;
+    bottom: -10px;
+    z-index: -1;
+    left: -5px;
+}
 /*Sessão contato desktop fim*/
 
 /*Sessão footer desktop inicio*/
-
 footer{
     background-color: #C63F00;
     display: flex;
@@ -361,7 +401,6 @@ footer li{
     font-family: 'Paragrafo';
     color: #FFFFFF;
 }
-
 /*Sessão footer desktop fim*/
 
 /*Parte mobile*/
@@ -384,6 +423,11 @@ footer li{
         height: 90vh;
 
     }
+
+    #logo {
+        width: 80vw;
+    }
+
     .btn{
         overflow: hidden;
         visibility: hidden;
@@ -575,17 +619,36 @@ footer li{
         background-color: orange;
     }
 
+    .svgQuemSomos {
+        top: 0px;
+        width: 70vw;
+    }
     /*Sesão programas mobile fim com snick*/
 
     /*Seção parcerias mobile inicio*/
+
+    #sec-parcerias-id {
+        padding: 100px 0px;
+    }
 
     .parceiro {
         width: 45%;
     }
 
+    .svgParcerias {
+        width: 70vw;
+        height: 200px;
+        top: -100px;
+        left: -5px;
+    }
+
     /*Seção parcerias mobile fim*/
 
     /*Seção contato mobile inicio*/
+    #sec-contato-id {
+        padding: 0;
+    }
+
     .contato {
         width: 80%;
     }
@@ -593,7 +656,11 @@ footer li{
     .contato .btnEnviar {
         width: 74px;
         height: 29px;
-    }    
+    }
+
+    .svgFooter {
+        width: 70vw;
+    }
     /*Seção contato mobile inicio*/
 
 }

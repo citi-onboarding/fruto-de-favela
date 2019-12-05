@@ -53,7 +53,10 @@
         {% else %}
         <img src="{% static 'fotos/ff.jpg' %}" alt="" class="img-inicio">
         {% endif %}
-        <img src="{% static 'fotos/logoVertical.svg' %}" alt="" class="img-logo_inicio">
+        <div id="logo">
+            <img src="{% static 'fotos/logoVertical.svg' %}" alt="Fruto de Favela">
+            <img src="{% static 'fotos/subtitulo.svg' %}"/>
+        </div>
     </section>
     <section class="sec-quem_somos" id="sec-quem_somos-id">
         <div class="div-quem_somos" id ="div-quem_somos-id">
@@ -106,145 +109,243 @@
     </section>
     <section class="sec-programas" id="sec-programas-id">
         <div class="div-h2Programas">
-            <h2 class="h2-programas">Nossos programas</h2>
+            <h2 class="h2-programas">NOSSOS PROGRAMAS</h2>
         </div>
         <div class="carrocel">
-            <div class="slide">
-                <img src="{% static 'fotos/1.jpg' %}" alt="">
-            </div>
-           <div>
-                <div class="separador"></div>
-           </div>
-            <div class="text-slide">
-                <h2>titulo-1</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                </p>
-                
-            </div>
-            <div class="slide">
-                <img src="{% static 'fotos/2.jpg' %}" alt="">
-            </div>
-            <div>
-                <div class="separador"></div>
-            </div>
-            <div class="text-slide">
-                <h2>titulo-2</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                </p>
-            </div>
-            <div class="slide">
-                <img src="{% static 'fotos/3.jpg' %}" alt="">
-            </div>
-            <div>
-                <div class="separador"></div>
-            </div>
-            <div class="text-slide">
-                <h2>titulo-3</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                </p>
-            </div>
-            <div class="slide">
-                <img src="{% static 'fotos/4.jpg' %}" alt="">
-            </div>
-            <div>
-                <div class="separador"></div>
-            </div>
-            <div class="text-slide">
-                <h2>titulo-4</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                </p>
-            </div>
-            <div class="slide">
-                <img src="{% static 'fotos/5.jpg' %}" alt="">
-            </div>
-            <div>
-                <div class="separador"></div>
-            </div>
-            <div class="text-slide">
-                <h2>titulo-5</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                    Lorem, ipsum dolor sit amet consectetur 
-                    adipisicing elit. Quasi unde possimus quae 
-                    atque sint? Non beatae ad, maiores iste similique 
-                    itaque qui, quisquam, laborum quod adipisci impedit 
-                    fugiat repudiandae corrupti!
-                </p>
+            {% for programa in nossosProgramas %}
+                <div class="slide">
+                    <img src="{{ programa.imagem.url }}" alt="">
                 </div>
+                <div>
+                    <div class="separador"></div>
+                </div>
+                <div class="text-slide">
+                    <h2>{{ programa.titulo }}</h2>
+                    <p>{{ programa.descricao }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="svgQuemSomos svgs">
+                <svg
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                width="1319mm"
+                height="341mm"
+                viewBox="0 0 4673.622 1208.2677"
+                id="svg2"
+                version="1.1"
+                inkscape:version="0.91 r13725"
+                sodipodi:docname="svgQuemSomos.svg">
+               <defs
+                  id="defs4" />
+               <sodipodi:namedview
+                  id="base"
+                  pagecolor="#ffffff"
+                  bordercolor="#666666"
+                  borderopacity="1.0"
+                  inkscape:pageopacity="0.0"
+                  inkscape:pageshadow="2"
+                  inkscape:zoom="0.12"
+                  inkscape:cx="1699.3756"
+                  inkscape:cy="520"
+                  inkscape:document-units="px"
+                  inkscape:current-layer="layer1"
+                  showgrid="false"
+                  inkscape:window-width="1366"
+                  inkscape:window-height="705"
+                  inkscape:window-x="-8"
+                  inkscape:window-y="-8"
+                  inkscape:window-maximized="1" />
+               <metadata
+                  id="metadata7">
+                 <rdf:RDF>
+                   <cc:Work
+                      rdf:about="">
+                     <dc:format>image/svg+xml</dc:format>
+                     <dc:type
+                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                     <dc:title></dc:title>
+                   </cc:Work>
+                 </rdf:RDF>
+               </metadata>
+               <g
+                  inkscape:label="Camada 1"
+                  inkscape:groupmode="layer"
+                  id="layer1"
+                  transform="translate(0,155.90551)">
+                 <g
+                    id="g4202"
+                    transform="matrix(3.5176736,0,0,3.5176736,565.51387,-1215.0241)">
+                   <path
+                      id="Caminho_12"
+                      data-name="Caminho 12"
+                      class="clsa-1"
+                      d="m 730.79008,298.45915 -71.9234,235.25097 339.27669,-26.40799"
+                      inkscape:connector-curvature="0"
+                      style="fill:#ffb865;stroke:#ffb865" />
+                   <g
+                      id="Subtração_1"
+                      data-name="Subtração 1"
+                      class="clsa-2"
+                      transform="matrix(-1,0,0,-1,1167.9505,462.53933)"
+                      style="fill:#f6921d">
+                     <path
+                        class="clsa-8"
+                        d="m 434.20471,161.00327 -433.70044749,0 -0.004278,0 0,-160.28543803 L 434.20471,161.00327 Z"
+                        id="path11"
+                        inkscape:connector-curvature="0"
+                        style="stroke:none" />
+                     <path
+                        class="clsa-9"
+                        d="m 0.99996948,1.4356689 0,159.0676011 430.40945052,0 L 0.99996948,1.4356689 M -3.0517578e-5,0 437,161.50327 l -436.49572754,0 0,160.99661 0.85348514,0 -1.357788117578,0.50198 0,-323.00186 z"
+                        id="path13"
+                        inkscape:connector-curvature="0"
+                        style="fill:#f6921d;stroke:none" />
+                   </g>
+                   <path
+                      id="Caminho_10"
+                      data-name="Caminho 10"
+                      class="clsa-3"
+                      d="m 730.95298,301.03833 436.60002,337.416 0,-176.766 z"
+                      inkscape:connector-curvature="0"
+                      style="fill:#e2820f;stroke:#e2820f" />
+                   <path
+                      id="Caminho_11"
+                      data-name="Caminho 11"
+                      class="clsa-4"
+                      d="m 658.26698,532.86533 -129.38901,-100.535 202.06801,-131.783 z"
+                      inkscape:connector-curvature="0"
+                      style="fill:#ffddb5;stroke:#ffddb5" />
+                   <path
+                      id="Caminho_13"
+                      data-name="Caminho 13"
+                      class="clsa-5"
+                      d="m 528.78097,432.12033 -239.453,-129.823 440.83801,0 z"
+                      inkscape:connector-curvature="0"
+                      style="fill:#eb7f00;stroke:#eb7f00" />
+                   <path
+                      id="Caminho_14"
+                      data-name="Caminho 14"
+                      class="clsa-6"
+                      d="m 516.57197,432.12033 c -474.106996,-15.454 -488.663996,-16.493 -488.663996,-16.493 l 26.234,-112.874 235.935996,0 240.01,129.367"
+                      inkscape:connector-curvature="0"
+                      style="fill:#f6921d;stroke:#f6921d" />
+                   <path
+                      id="Caminho_16"
+                      data-name="Caminho 16"
+                      class="clsa-7"
+                      d="m 55.682974,303.71333 -26.3,111.986 -180.029004,-111.986"
+                      inkscape:connector-curvature="0"
+                      style="fill:#c86c01;stroke:#c86c01" />
+                 </g>
+               </g>
+             </svg>
         </div> 
-        
     </section>
     <section class="sec-parcerias" id="sec-parcerias-id">
-        <h2>Parcerias</h2>
+        <div class="svgParcerias svgs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1310.604" height="637.798" viewBox="0 0 1310.604 637.798">
+                <defs>
+                    <style>
+                    .clsw-1, .clsw-15, .clsw-8 {
+                        fill: #ffb865;
+                    }
+                
+                    .clsw-1 {
+                        stroke: #ffb865;
+                    }
+                
+                    .clsw-14, .clsw-2, .clsw-6 {
+                        fill: #f6921d;
+                    }
+                
+                    .clsw-3 {
+                        fill: #e2820f;
+                        stroke: #e2820f;
+                    }
+                
+                    .clsw-4 {
+                        fill: #ffddb5;
+                        stroke: #ffddb5;
+                    }
+                
+                    .clsw-5 {
+                        fill: #eb7f00;
+                        stroke: #eb7f00;
+                    }
+                
+                    .clsw-6 {
+                        stroke: #f6921d;
+                    }
+                
+                    .clsw-7 {
+                        fill: #c86c01;
+                        stroke: #c86c01;
+                    }
+                
+                    .clsw-9 {
+                        fill: #f7a545;
+                        stroke: #f7a545;
+                    }
+                
+                    .clsw-10 {
+                        fill: #bb6500;
+                        stroke: #bb6500;
+                    }
+                
+                    .clsw-11 {
+                        fill: #f8af5a;
+                        stroke: #f8af5a;
+                    }
+                
+                    .clsw-12 {
+                        fill: #ff8900;
+                        stroke: #ff8900;
+                    }
+                
+                    .clsw-13, .clsw-14, .clsw-15 {
+                        stroke: none;
+                    }
+                    </style>
+                </defs>
+                <g id="Grupo_23" data-name="Grupo 23" transform="translate(12.055 -3071.565)">
+                    <g id="Grupo_22" data-name="Grupo 22">
+                    <path id="Caminho_12" data-name="Caminho 12" class="clsw-1" d="M0,316H246L121.551-.731" transform="translate(132.467 3320.191) rotate(-73)"/>
+                    <g id="Subtração_1" data-name="Subtração 1" class="clsw-2" transform="translate(-2.5 3248.5)">
+                        <path class="clsw-13" d="M 434.2047119140625 161.0031890869141 L 0.5042625069618225 161.0031890869141 L 0.4999847412109375 161.0031890869141 L 0.4999847412109375 0.7178665995597839 L 434.2047119140625 161.0031890869141 Z"/>
+                        <path class="clsw-14" d="M 0.999969482421875 1.4356689453125 L 0.999969482421875 160.5031890869141 L 431.409423828125 160.5031890869141 L 0.999969482421875 1.4356689453125 M -3.0517578125e-05 -3.0517578125e-05 L 437 161.5031890869141 L 0.5042724609375 161.5031890869141 L 0.5042724609375 322.499755859375 L 1.357757568359375 322.499755859375 L -3.0517578125e-05 323.0016784667969 L -3.0517578125e-05 -3.0517578125e-05 Z"/>
+                    </g>
+                    <path id="Caminho_10" data-name="Caminho 10" class="clsw-3" d="M18951.5,4079l-436.6-337.417v176.767Z" transform="translate(-18517 -669)"/>
+                    <path id="Caminho_11" data-name="Caminho 11" class="clsw-4" d="M19017.826,3844.174l129.389,100.535-202.068,131.783Z" transform="translate(-18511 -666)"/>
+                    <path id="Caminho_13" data-name="Caminho 13" class="clsw-5" d="M19153.215,3946.739l239.453,129.823H18951.83Z" transform="translate(-18517 -667.82)"/>
+                    <path id="Caminho_14" data-name="Caminho 14" class="clsw-6" d="M19164.965,3947.919c474.107,15.454,488.664,16.493,488.664,16.493l-26.234,112.874h-235.936l-240.01-129.367" transform="translate(-18517 -669)"/>
+                    <path id="Caminho_16" data-name="Caminho 16" class="clsw-7" d="M21144.785,3648.1l23.711-150.754,162.283,150.754" transform="matrix(0.996, 0.087, -0.087, 0.996, -19646.672, -2034.507)"/>
+                    <path id="Caminho_29" data-name="Caminho 29" class="clsw-6" d="M-2734.178,4465.157l-55.386,231.465-443.491-248.131Z" transform="translate(3869 -1170)"/>
+                    <g id="Caminho_30" data-name="Caminho 30" class="clsw-8" transform="translate(3869 -1171)">
+                        <path class="clsw-13" d="M -2791.82080078125 4697.28515625 L -3430.13330078125 4580.39013671875 L -2999.05078125 4580.39013671875 L -2791.82080078125 4697.28515625 Z"/>
+                        <path class="clsw-15" d="M -2794.662109375 4696.2568359375 L -2999.18212890625 4580.89013671875 L -3424.627197265625 4580.89013671875 L -2794.662109375 4696.2568359375 M -2788.9794921875 4698.31396484375 L -3435.639404296875 4579.89013671875 L -2998.91943359375 4579.89013671875 L -2788.9794921875 4698.31396484375 Z"/>
+                    </g>
+                    <path id="Caminho_31" data-name="Caminho 31" class="clsw-4" d="M50.413,9.206l56.734,266.155H0L50.413,9.206" transform="translate(1090.092 3477.853) rotate(90)"/>
+                    <path id="Caminho_32" data-name="Caminho 32" class="clsw-9" d="M-3054.269,4646.531v195.561l-266.145-241.871Z" transform="translate(3869 -1170)"/>
+                    <path id="Caminho_33" data-name="Caminho 33" class="clsw-10" d="M-3054.269,4842.091l-348.189-100.877,82.069-141.912Z" transform="translate(3869 -1170)"/>
+                    <path id="Caminho_34" data-name="Caminho 34" class="clsw-6" d="M-3320.415,4600.221l-80.73,138.5-35.511-160.456Z" transform="translate(3869 -1170)"/>
+                    <path id="Caminho_35" data-name="Caminho 35" class="clsw-3" d="M-3436.49,4580.271l-434.49-.485,99.784,34.415,370.35,127.731-285.708,136.208" transform="translate(3869 -1170)"/>
+                    <path id="Caminho_36" data-name="Caminho 36" class="clsw-4" d="M-3769.41,4615.095l84.174,260.413,151.777-179.18-347.4,146.968" transform="translate(3869 -1170)"/>
+                    <path id="Caminho_37" data-name="Caminho 37" class="clsw-10" d="M-3533.459,4696.117l-184.109,78.285-51.034-159Z" transform="translate(3869 -1170)"/>
+                    <path id="Caminho_39" data-name="Caminho 39" class="clsw-11" d="M-3869.388,4579.917l101.171,35.021-101.171,204.676Z" transform="translate(3869 -1170)"/>
+                    <path id="Caminho_40" data-name="Caminho 40" class="clsw-12" d="M-3532.591,4696.353l-152.654,181.987-32.327-103.938Z" transform="translate(3869 -1170)"/>
+                    <path id="Caminho_41" data-name="Caminho 41" class="clsw-9" d="M-3400.846,4741.5l-34.9-162.529-97.124,116.346Z" transform="translate(3869 -1170)"/>
+                    </g>
+                    <path id="Caminho_42" data-name="Caminho 42" class="clsw-4" d="M-3718.374,4774.4l32.736,103.024-186.154-39.457Z" transform="translate(3869 -1170)"/>
+                </g>
+            </svg>   
+        </div>
+        <h2>PARCERIAS</h2>
         <div id="parcerias">
             {% for parceiro in parceiros %}
             <div class="parceiro">
@@ -253,9 +354,102 @@
             </div>
             {% endfor %}
         </div>
+        <div class="svgContatos svgs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1310.603" height="637.797" viewBox="0 0 1310.603 637.797">
+                <defs>
+                    <style>
+                    .clsm-1 {
+                        fill: #d06330;
+                        stroke: #ffb865;
+                    }
+                
+                    .clsm-13, .clsm-2, .clsm-6 {
+                        fill: #d46f40;
+                    }
+                
+                    .clsm-3 {
+                        fill: #c63f00;
+                        stroke: #c63f00;
+                    }
+                
+                    .clsm-11, .clsm-4 {
+                        fill: #e6ac91;
+                    }
+                
+                    .clsm-4 {
+                        stroke: #e6ac91;
+                    }
+                
+                    .clsm-5 {
+                        fill: #f6921d;
+                        stroke: #f6921d;
+                    }
+                
+                    .clsm-6 {
+                        stroke: #d46f40;
+                    }
+                
+                    .clsm-14, .clsm-7 {
+                        fill: #d26938;
+                    }
+                
+                    .clsm-8 {
+                        fill: #cc541c;
+                        stroke: #cc541c;
+                    }
+                
+                    .clsm-9 {
+                        fill: #d24f2e;
+                        stroke: #d24f2e;
+                    }
+                
+                    .clsm-10 {
+                        fill: #cd561f;
+                        stroke: #cd561f;
+                    }
+                
+                    .clsm-11 {
+                        stroke: #f8af5a;
+                    }
+                
+                    .clsm-12, .clsm-13, .clsm-14 {
+                        stroke: none;
+                    }
+                    </style>
+                </defs>
+                <g id="Grupo_52" data-name="Grupo 52" transform="translate(-633.717 -4313.565)">
+                    <path id="Caminho_12" data-name="Caminho 12" class="clsm-1" d="M0,0H246L121.551,316.731" transform="translate(1497.605 4654.581) rotate(-107)"/>
+                    <g id="Subtração_1" data-name="Subtração 1" class="clsm-2" transform="translate(1934.765 4813.502) rotate(180)">
+                    <path class="clsm-12" d="M 0.500030517578125 322.2839050292969 L 0.500030517578125 161.9985198974609 L 0.5042527318000793 161.9985198974609 L 434.2048034667969 161.9985198974609 L 0.500030517578125 322.2839050292969 Z"/>
+                    <path class="clsm-13" d="M 1.000030517578125 321.5660400390625 L 431.4095153808594 162.4985198974609 L 1.000030517578125 162.4985198974609 L 1.000030517578125 321.5660400390625 M 3.0517578125e-05 323.0017395019531 L 3.0517578125e-05 2.115885399689432e-05 L 1.357752680778503 0.5019655823707581 L 0.5042527318000793 0.5019655823707581 L 0.5042527318000793 161.4985198974609 L 437.0000915527344 161.4985198974609 L 3.0517578125e-05 323.0017395019531 Z"/>
+                    </g>
+                    <path id="Caminho_10" data-name="Caminho 10" class="clsm-3" d="M18514.9,4079l436.6-337.417v176.767Z" transform="translate(-17017.133 573)"/>
+                    <path id="Caminho_11" data-name="Caminho 11" class="clsm-3" d="M19074.533,3844.174l-129.389,100.535,202.068,131.783Z" transform="translate(-17649.094 576)"/>
+                    <path id="Caminho_13" data-name="Caminho 13" class="clsm-4" d="M19191.281,3946.739l-239.453,129.823h440.838Z" transform="translate(-17895.23 574.18)"/>
+                    <path id="Caminho_14" data-name="Caminho 14" class="clsm-5" d="M19640.113,3947.919c-474.107,15.454-488.664,16.493-488.664,16.493l26.234,112.874h235.936l240.01-129.367" transform="translate(-18355.813 573)"/>
+                    <path id="Caminho_16" data-name="Caminho 16" class="clsm-6" d="M0,0,23.709,150.754,185.992,0" transform="matrix(-0.996, 0.087, -0.087, -0.996, 832.567, 4684.596)"/>
+                    <path id="Caminho_29" data-name="Caminho 29" class="clsm-3" d="M-3233.056,4465.157l55.386,231.465,443.491-248.131Z" transform="translate(4030.499 72)"/>
+                    <g id="Caminho_30" data-name="Caminho 30" class="clsm-7" transform="translate(4287.884 71)">
+                    <path class="clsm-12" d="M -3432.798095703125 4697.28515625 L -3225.568115234375 4580.39013671875 L -2794.485595703125 4580.39013671875 L -3432.798095703125 4697.28515625 Z"/>
+                    <path class="clsm-14" d="M -3429.956787109375 4696.2568359375 L -2799.991455078125 4580.89013671875 L -3225.436767578125 4580.89013671875 L -3429.956787109375 4696.2568359375 M -3435.639404296875 4698.31396484375 L -3225.699462890625 4579.89013671875 L -2788.9794921875 4579.89013671875 L -3435.639404296875 4698.31396484375 Z"/>
+                    </g>
+                    <path id="Caminho_31" data-name="Caminho 31" class="clsm-4" d="M50.413,266.155,107.147,0H0L50.413,266.155" transform="translate(1117.534 4719.853) rotate(90)"/>
+                    <path id="Caminho_32" data-name="Caminho 32" class="clsm-3" d="M-3320.415,4646.531v195.561l266.145-241.871Z" transform="translate(4437.949 72)"/>
+                    <path id="Caminho_33" data-name="Caminho 33" class="clsm-6" d="M-3402.458,4842.091l348.189-100.877-82.069-141.912Z" transform="translate(4519.992 72)"/>
+                    <path id="Caminho_34" data-name="Caminho 34" class="clsm-8" d="M-3436.655,4600.221l80.73,138.5,35.511-160.456Z" transform="translate(4820.335 72)"/>
+                    <path id="Caminho_35" data-name="Caminho 35" class="clsm-3" d="M-3835.335,4580.271l434.49-.485-99.784,34.415-370.35,127.731,285.708,136.208" transform="translate(5335.09 72)"/>
+                    <path id="Caminho_36" data-name="Caminho 36" class="clsm-9" d="M-3644.908,4615.095l-84.174,260.413-151.778-179.18,347.4,146.968" transform="translate(5477.584 72)"/>
+                    <path id="Caminho_37" data-name="Caminho 37" class="clsm-10" d="M-3768.6,4696.117l184.109,78.285,51.034-159Z" transform="translate(5365.326 72)"/>
+                    <path id="Caminho_39" data-name="Caminho 39" class="clsm-11" d="M-3768.217,4579.917l-101.171,35.021,101.171,204.676Z" transform="translate(5700.87 72)"/>
+                    <path id="Caminho_40" data-name="Caminho 40" class="clsm-4" d="M-3717.572,4696.353l152.654,181.987,32.327-103.938Z" transform="translate(5313.428 72)"/>
+                    <path id="Caminho_41" data-name="Caminho 41" class="clsm-9" d="M-3532.871,4741.5l34.9-162.529,97.124,116.346Z" transform="translate(4996.981 72)"/>
+                    <path id="Caminho_42" data-name="Caminho 42" class="clsm-9" d="M-3839.056,4774.4l-32.736,103.024,186.154-39.457Z" transform="translate(5620.695 72)"/>
+                </g>
+            </svg>       
+        </div>
     </section>
     <section class="sec-contato" id="sec-contato-id">
-        <h2>Contato</h2>
+        <h2>CONTATO</h2>
         <div class="contato">
             <form action="POST" id="formContato">
                 {% csrf_token %}
@@ -270,7 +464,129 @@
                 <div class="center"><input type="submit" value="ENVIAR" class="btnEnviar"></div>
             </form>
         </div>
+        <div class="svgFooter svgs">
+                <svg
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                    width="1318mm"
+                    height="341mm"
+                    viewBox="0 0 4670.0787 1208.2677"
+                    id="svg2"
+                    version="1.1"
+                    inkscape:version="0.91 r13725"
+                    sodipodi:docname="svgFooter.svg">
+                   <defs
+                      id="defs4" />
+                   <sodipodi:namedview
+                      id="base"
+                      pagecolor="#ffffff"
+                      bordercolor="#666666"
+                      borderopacity="1.0"
+                      inkscape:pageopacity="0.0"
+                      inkscape:pageshadow="2"
+                      inkscape:zoom="0.13"
+                      inkscape:cx="2226.4149"
+                      inkscape:cy="520"
+                      inkscape:document-units="px"
+                      inkscape:current-layer="layer1"
+                      showgrid="false"
+                      inkscape:window-width="1366"
+                      inkscape:window-height="705"
+                      inkscape:window-x="-8"
+                      inkscape:window-y="-8"
+                      inkscape:window-maximized="1" />
+                   <metadata
+                      id="metadata7">
+                     <rdf:RDF>
+                       <cc:Work
+                          rdf:about="">
+                         <dc:format>image/svg+xml</dc:format>
+                         <dc:type
+                            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                         <dc:title></dc:title>
+                       </cc:Work>
+                     </rdf:RDF>
+                   </metadata>
+                   <g
+                      inkscape:label="Camada 1"
+                      inkscape:groupmode="layer"
+                      id="layer1"
+                      transform="translate(0,155.90551)">
+                     <g
+                        id="g4158"
+                        transform="matrix(3.5387814,0,0,3.5387814,-93.062525,432.2518)">
+                       <path
+                          id="Caminho_12"
+                          data-name="Caminho 12"
+                          class="clsv-1"
+                          d="m 464.82591,176.81609 71.92344,-235.250972 -339.27673,26.40799"
+                          inkscape:connector-curvature="0"
+                          style="fill:#d06330;stroke:#d06330" />
+                       <g
+                          id="Subtração_1"
+                          data-name="Subtração 1"
+                          class="clsv-2"
+                          transform="translate(27.666612,12.735628)"
+                          style="fill:#c63f00">
+                         <path
+                            class="clsv-6"
+                            d="m 434.20471,161.00319 -433.70044749,0 -0.004278,0 0,-160.2853234 L 434.20471,161.00319 Z"
+                            id="path11"
+                            inkscape:connector-curvature="0"
+                            style="stroke:none" />
+                         <path
+                            class="clsv-7"
+                            d="m 0.99996948,1.4356689 0,159.0675211 430.40945052,0 L 0.99996948,1.4356689 M -3.0517578e-5,-3.0517578e-5 437,161.50319 l -436.49572754,0 0,160.99657 0.85348514,0 -1.357788117578,0.50192 0,-323.001710517578 z"
+                            id="path13"
+                            inkscape:connector-curvature="0"
+                            style="fill:#c63f00;stroke:none" />
+                       </g>
+                       <path
+                          id="Caminho_10"
+                          data-name="Caminho 10"
+                          class="clsv-3"
+                          d="m 464.66661,174.23563 -436.599998,-337.417 0,176.766998 z"
+                          inkscape:connector-curvature="0"
+                          style="fill:#d46f40;stroke:#d46f40" />
+                       <path
+                          id="Caminho_11"
+                          data-name="Caminho 11"
+                          class="clsv-4"
+                          d="m 536.99261,-57.590372 129.389,100.535 -202.068,131.783002 z"
+                          inkscape:connector-curvature="0"
+                          style="fill:#c63f00;stroke:#c63f00" />
+                       <path
+                          id="Caminho_13"
+                          data-name="Caminho 13"
+                          class="clsv-5"
+                          d="m 666.38161,43.154628 239.45298,131.573002 -440.83798,0 z"
+                          inkscape:connector-curvature="0"
+                          style="fill:#e6ac91;stroke:#e6ac91" />
+                       <path
+                          id="Caminho_14"
+                          data-name="Caminho 14"
+                          class="clsv-4"
+                          d="m 678.13161,43.154628 c 474.10699,15.658 488.66399,16.712 488.66399,16.712 l -26.234,114.369002 -235.93601,0 L 664.61561,43.154628"
+                          inkscape:connector-curvature="0"
+                          style="fill:#c63f00;stroke:#c63f00" />
+                       <path
+                          id="Caminho_16"
+                          data-name="Caminho 16"
+                          class="clsv-3"
+                          d="m 1139.0196,174.23563 26.3,-114.659002 180.032,114.659002"
+                          inkscape:connector-curvature="0"
+                          style="fill:#d46f40;stroke:#d46f40" />
+                     </g>
+                   </g>
+                </svg>
+            </div>
     </section>
+    
    <footer>
        <div class="icone">
            <img src="{% static 'fotos/instagram.svg' %}" alt="">
