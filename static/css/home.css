@@ -127,6 +127,10 @@ nav{
     flex-direction: column;
     align-items: center;
 }
+.subtitulo{
+    box-shadow: 0 0 30px 0 #000029;
+    background: rgba( 0, 0, 0, 0.2);
+} 
 
 #logo img {
     width: 100%;
@@ -373,10 +377,10 @@ nav{
 }
 
 .center {
-    /* padding-top: 10px; */
     padding: 15px;
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .svgFooter {
@@ -392,8 +396,8 @@ nav{
 footer{
     background-color: #C63F00;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -415,6 +419,45 @@ footer li{
     font-family: 'Paragrafo';
     color: #FFFFFF;
 }
+#contatosFooter{
+    display: grid;
+    /* width: 50vw; */
+    grid-template-areas: 
+    "contato email"
+    "instagram email"
+    ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+#contatosFooter img{
+    width: 28px;
+}
+#contatosFooter p{
+    margin: 0;
+    font-size: 0.8em;
+}
+.instagram{
+    grid-area: instagram;
+    display: flex;
+    align-items: center;
+}
+.whatsapp{
+    grid-area: contato;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.numeros{
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    grid-area: email;
+    display: flex;
+    align-items: center;
+}
+
 /*Sessão footer desktop fim*/
 
 /*Parte mobile*/
@@ -502,18 +545,18 @@ footer li{
     }
     .ul-menu_mobile{
         position: fixed;
-        top: 35%;
-        left: 115%;
+        top: 24%;
+        /* left: 115%; */
         transform: translate(-50%, -50%);
         list-style: none;
-        font-size: 35px;
+        font-size: 20px;
         opacity: 0;
         transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
         z-index: 2;
         visibility: visible;
     }
     .a-menu {
-        color: #F6921D;
+        color: white;
         display: block;
         margin-bottom: 1em;
         text-decoration: none;
@@ -544,11 +587,13 @@ footer li{
     .input-hamburguer:checked ~ ul{
         opacity: 1;
         z-index: 12;
-        left: 42%;
+        left: 70%;
         transition: 0.4s;
     }
     .input-hamburguer:checked ~ label .menu_hamburguer{
-        box-shadow: 0 0 0 160vw white, 0 0 0 160vw white;
+        box-shadow: 0 40vw 0 40vw #F6921D, 0 40vw 0 40vw #F6921D;
+        /* border-radius: 0.001px; */
+        border-bottom-left-radius: 1px;
         z-index: 12;
     }
     .input-hamburguer:checked ~ label .hamburguer{
@@ -692,18 +737,12 @@ footer li{
         flex-direction: column;
         align-items: center;
         background-color: #368687;
- /*       position: relative;
-        height: 60vh;
-        max-height: 100vh;
-        min-height: 800px;*/
     }
     .tres_pilares{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         position: relative;
-/*        top: 21vh;
-        margin-left: 10px;*/
     }
     .pilar{
         max-width: 22vw;
