@@ -12,25 +12,6 @@ tresPilares.style.marginTop = `${ espaco.clientHeight-50 }px`;
 
 /* slick teste */
 
-if ( window.innerWidth <=  930){
-$('.carrocel').slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-    rows: 3
-});
-}else{
-    $('.carrocel').slick({
-        dots: true,
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        variableWidth: true
-    });
-}
-
 btnHamburguer1.addEventListener('click', ()=>{
     imputHamburguer.checked = false;
 });
@@ -59,6 +40,7 @@ window.addEventListener('resize',()=>{
         variableWidth: true,
         rows: 3
     });
+    console.log('if',window.innerWidth);
     }else{
         $('.carrocel').slick({
             dots: true,
@@ -67,6 +49,7 @@ window.addEventListener('resize',()=>{
             slidesToScroll: 3,
             variableWidth: true
         });
+        console.log('else');
     }
 });
 
@@ -82,6 +65,7 @@ window.addEventListener('load',()=>{
         variableWidth: true,
         rows: 3
     });
+    
     }else{
         $('.carrocel').slick({
             dots: true,
@@ -89,7 +73,7 @@ window.addEventListener('load',()=>{
             slidesToShow: 3,
             slidesToScroll: 3,
             variableWidth: true
-        });
+        });       
     }
 });
 
